@@ -1,5 +1,5 @@
 ﻿Uni1Tools
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 D:\Projects\Uni1\Uni1Tools\App.xaml
 8519356191
 
-32621493098
+341494831514
 1981682422555
 MainWindow.xaml;Resources\Converters\Converters.xaml;Resources\Strings.xaml;Resources\Theme.xaml;Views\BmiCalculatorView.xaml;Views\CurrencyCalculatorView.xaml;Views\PasswordRandomView.xaml;Views\UnitConverterView.xaml;
 
-False
+True
 

@@ -51,7 +51,7 @@ namespace Uni1Tools.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Uni1Tools;component/views/bmicalculatorview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Uni1Tools;V1.0.0.0;component/views/bmicalculatorview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\BmiCalculatorView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

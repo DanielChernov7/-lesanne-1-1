@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uni1Tools")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2d1008e6bf98436caf404fbb98d672f6903daa9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cbc65774aaed015fa1cb9a1384306c1ec3dd324")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uni1Tools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uni1Tools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

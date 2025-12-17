@@ -1,0 +1,75 @@
+﻿<Window x:Class="Uni1Tools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:Uni1Tools.ViewModels"
+        xmlns:views="clr-namespace:Uni1Tools.Views"
+        mc:Ignorable="d"
+        Title="{DynamicResource AppTitle}"
+        Width="1100"
+        Height="720"
+        Background="{DynamicResource AppBackgroundBrush}"
+        FontFamily="{DynamicResource AppFontFamily}"
+        FontSize="{DynamicResource BaseFontSize}"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModels:UnitConverterViewModel}">
+            <views:UnitConverterView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:CurrencyCalculatorViewModel}">
+            <views:CurrencyCalculatorView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:PasswordRandomViewModel}">
+            <views:PasswordRandomView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:BmiCalculatorViewModel}">
+            <views:BmiCalculatorView />
+        </DataTemplate>
+    </Window.Resources>
+    <Window.DataContext>
+        <viewModels:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                Background="{DynamicResource NavBackgroundBrush}"
+                Padding="24">
+            <StackPanel>
+                <TextBlock Text="{DynamicResource AppTitle}"
+                           Foreground="{DynamicResource NavForegroundBrush}"
+                           FontSize="22"
+                           FontWeight="SemiBold"
+                           Margin="0,0,0,24" />
+
+                <Button Style="{DynamicResource NavButtonStyle}"
+                        Content="{DynamicResource NavUnitConverter}"
+                        Command="{Binding ShowUnitConverterCommand}" />
+
+                <Button Style="{DynamicResource NavButtonStyle}"
+                        Content="{DynamicResource NavCurrencyCalculator}"
+                        Command="{Binding ShowCurrencyCalculatorCommand}" />
+
+                <Button Style="{DynamicResource NavButtonStyle}"
+                        Content="{DynamicResource NavPasswordRandom}"
+                        Command="{Binding ShowPasswordRandomCommand}" />
+
+                <Button Style="{DynamicResource NavButtonStyle}"
+                        Content="{DynamicResource NavBmiCalculator}"
+                        Command="{Binding ShowBmiCalculatorCommand}" />
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Column="1"
+                Margin="16"
+                Background="{DynamicResource ContentBackgroundBrush}"
+                CornerRadius="12"
+                Padding="0">
+            <ContentControl Content="{Binding CurrentViewModel}" />
+        </Border>
+    </Grid>
+</Window>

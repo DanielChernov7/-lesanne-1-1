@@ -1,0 +1,107 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <sys:String x:Key="AppTitle">Uni1 Tool Suite</sys:String>
+
+    <sys:String x:Key="NavUnitConverter">Unit Converter</sys:String>
+    <sys:String x:Key="NavCurrencyCalculator">Currency Calculator</sys:String>
+    <sys:String x:Key="NavPasswordRandom">Password + Random</sys:String>
+    <sys:String x:Key="NavBmiCalculator">BMI (KMI) Calculator</sys:String>
+
+    <sys:String x:Key="UnitConverterTitle">Unit Converter</sys:String>
+    <sys:String x:Key="CurrencyCalculatorTitle">Currency Exchange</sys:String>
+    <sys:String x:Key="PasswordRandomTitle">Password and Random Generator</sys:String>
+    <sys:String x:Key="BmiCalculatorTitle">BMI (KMI) Calculator</sys:String>
+
+    <sys:String x:Key="LabelCategory">Category</sys:String>
+    <sys:String x:Key="LabelFrom">From</sys:String>
+    <sys:String x:Key="LabelTo">To</sys:String>
+    <sys:String x:Key="LabelValue">Value</sys:String>
+    <sys:String x:Key="LabelAmount">Amount</sys:String>
+    <sys:String x:Key="LabelResult">Result</sys:String>
+    <sys:String x:Key="LabelOutput">Output</sys:String>
+    <sys:String x:Key="LabelRateUsed">Rate used</sys:String>
+    <sys:String x:Key="LabelUpdated">Updated</sys:String>
+    <sys:String x:Key="LabelCurrencyCode">Code</sys:String>
+    <sys:String x:Key="LabelCurrencyRate">Rate</sys:String>
+
+    <sys:String x:Key="ButtonConvert">Convert</sys:String>
+    <sys:String x:Key="ButtonCalculate">Calculate</sys:String>
+    <sys:String x:Key="ButtonGenerate">Generate</sys:String>
+    <sys:String x:Key="ButtonReset">Reset</sys:String>
+    <sys:String x:Key="ButtonSaveRates">Save Rates</sys:String>
+    <sys:String x:Key="ButtonCopy">Copy</sys:String>
+    <sys:String x:Key="ButtonSwap">Swap Units</sys:String>
+
+    <sys:String x:Key="CurrencyRateHeader">Editable Rates (1 EUR = X)</sys:String>
+    <sys:String x:Key="PasswordSettingsHeader">Password Settings</sys:String>
+    <sys:String x:Key="RandomSettingsHeader">Random Number Generator</sys:String>
+
+    <sys:String x:Key="LabelPasswordLength">Length</sys:String>
+    <sys:String x:Key="LabelUppercase">Include uppercase (A-Z)</sys:String>
+    <sys:String x:Key="LabelLowercase">Include lowercase (a-z)</sys:String>
+    <sys:String x:Key="LabelDigits">Include digits (0-9)</sys:String>
+    <sys:String x:Key="LabelSymbols">Include symbols (!@#$)</sys:String>
+    <sys:String x:Key="LabelExcludeSimilar">Exclude similar (O/0, l/1)</sys:String>
+    <sys:String x:Key="LabelStrength">Strength</sys:String>
+
+    <sys:String x:Key="LabelRandomMin">Minimum</sys:String>
+    <sys:String x:Key="LabelRandomMax">Maximum</sys:String>
+    <sys:String x:Key="LabelRandomCount">Count</sys:String>
+    <sys:String x:Key="LabelRandomUnique">Unique numbers</sys:String>
+
+    <sys:String x:Key="LabelWeight">Weight (kg)</sys:String>
+    <sys:String x:Key="LabelHeight">Height (cm)</sys:String>
+    <sys:String x:Key="LabelCategoryResult">Category</sys:String>
+    <sys:String x:Key="LabelRecommendation">Recommendation</sys:String>
+
+    <sys:String x:Key="UnitTemperature">Temperature</sys:String>
+    <sys:String x:Key="UnitLength">Length</sys:String>
+    <sys:String x:Key="UnitMass">Mass</sys:String>
+
+    <sys:String x:Key="UnitCelsius">Celsius</sys:String>
+    <sys:String x:Key="UnitFahrenheit">Fahrenheit</sys:String>
+    <sys:String x:Key="UnitKelvin">Kelvin</sys:String>
+    <sys:String x:Key="UnitMeter">Meters</sys:String>
+    <sys:String x:Key="UnitKilometer">Kilometers</sys:String>
+    <sys:String x:Key="UnitCentimeter">Centimeters</sys:String>
+    <sys:String x:Key="UnitMillimeter">Millimeters</sys:String>
+    <sys:String x:Key="UnitGram">Grams</sys:String>
+    <sys:String x:Key="UnitKilogram">Kilograms</sys:String>
+    <sys:String x:Key="UnitPound">Pounds</sys:String>
+
+    <sys:String x:Key="ErrorEnterValidNumber">Please enter a valid number.</sys:String>
+    <sys:String x:Key="ErrorSelectUnits">Please select units.</sys:String>
+    <sys:String x:Key="ErrorValidAmount">Please enter a valid amount.</sys:String>
+    <sys:String x:Key="ErrorAmountPositive">Amount must be zero or higher.</sys:String>
+    <sys:String x:Key="ErrorSelectCurrencies">Please select currencies.</sys:String>
+    <sys:String x:Key="ErrorRateMissing">Rate table is missing one of the selected currencies.</sys:String>
+    <sys:String x:Key="ErrorInvalidRate">All rates must have a code and a positive value.</sys:String>
+    <sys:String x:Key="StatusRatesSaved">Rates saved to local storage.</sys:String>
+
+    <sys:String x:Key="ErrorSelectCategory">Select at least one character category.</sys:String>
+    <sys:String x:Key="ErrorLengthTooShort">Length must be at least the number of selected categories.</sys:String>
+    <sys:String x:Key="ErrorRandomInputs">Enter valid numbers for min, max, and count.</sys:String>
+    <sys:String x:Key="ErrorRandomCount">Count must be at least 1.</sys:String>
+    <sys:String x:Key="ErrorRandomRange">Count is larger than the unique range.</sys:String>
+    <sys:String x:Key="StatusPasswordCopied">Password copied to clipboard.</sys:String>
+
+    <sys:String x:Key="StrengthWeak">Weak</sys:String>
+    <sys:String x:Key="StrengthMedium">Medium</sys:String>
+    <sys:String x:Key="StrengthStrong">Strong</sys:String>
+
+    <sys:String x:Key="ErrorValidWeightHeight">Please enter valid numbers for weight and height.</sys:String>
+    <sys:String x:Key="ErrorPositiveWeightHeight">Weight and height must be positive.</sys:String>
+
+    <sys:String x:Key="BmiUnderweight">Underweight</sys:String>
+    <sys:String x:Key="BmiNormal">Normal</sys:String>
+    <sys:String x:Key="BmiOverweight">Overweight</sys:String>
+    <sys:String x:Key="BmiObese">Obese</sys:String>
+
+    <sys:String x:Key="BmiUnderweightRec">Consider nutrient-dense meals and gentle strength training.</sys:String>
+    <sys:String x:Key="BmiNormalRec">Great job. Maintain your habits and stay active.</sys:String>
+    <sys:String x:Key="BmiOverweightRec">A small calorie deficit and regular activity can help.</sys:String>
+    <sys:String x:Key="BmiObeseRec">Consider a structured plan and professional guidance.</sys:String>
+</ResourceDictionary>
+
+

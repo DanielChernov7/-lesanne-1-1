@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="Uni1Tools.Views.BmiCalculatorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="{DynamicResource PagePadding}">
+            <TextBlock Text="{DynamicResource BmiCalculatorTitle}" Style="{DynamicResource SectionTitleStyle}" />
+
+            <Border Style="{DynamicResource CardStyle}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="{DynamicResource LabelWeight}" VerticalAlignment="Center" />
+                    <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding WeightKg, UpdateSourceTrigger=PropertyChanged}" />
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="{DynamicResource LabelHeight}" VerticalAlignment="Center" Margin="0,10,0,0" />
+                    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding HeightCm, UpdateSourceTrigger=PropertyChanged}" Margin="0,10,0,0" />
+
+                    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="0,14,0,0">
+                        <Button Style="{DynamicResource PrimaryButtonStyle}"
+                                Content="{DynamicResource ButtonCalculate}"
+                                Command="{Binding CalculateCommand}" />
+                        <Button Style="{DynamicResource SecondaryButtonStyle}"
+                                Content="{DynamicResource ButtonReset}"
+                                Command="{Binding ResetCommand}" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <TextBlock Text="{Binding ErrorMessage}"
+                       Foreground="{DynamicResource ErrorBrush}"
+                       Visibility="{Binding ErrorMessage, Converter={StaticResource StringNotEmptyToVisibilityConverter}}" />
+
+            <Border Style="{DynamicResource OutputBoxStyle}">
+                <TextBlock Text="{Binding ResultText}" TextWrapping="Wrap" />
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
